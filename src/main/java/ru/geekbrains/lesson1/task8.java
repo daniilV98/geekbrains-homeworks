@@ -6,17 +6,20 @@ public class task8 {
 
     public static void main(String[] args) {
         int[][] square = new int[5][5];
-        int a = 1;
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                square[0][0] = a;
-                square[1][1] = a;
-                square[2][2] = a;
-                square[3][3] = a;
-                square[4][4] = a;
-                System.out.print(square[i][j] + " ");
+        fillDiags(square);
+
+        for (int[] line : square) {
+            System.out.println(Arrays.toString(line));
+        }
+    }
+
+    public static void fillDiags(int[][] square) {
+        for (int i = 0; i < square.length; i++) {
+            for (int j = 0; j < square[i].length; j++) {
+                if (i == j) {
+                    square[i][j] = 1;
+                }
             }
-            System.out.println();
         }
     }
 }

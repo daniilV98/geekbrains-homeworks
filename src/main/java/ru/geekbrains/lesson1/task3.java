@@ -5,9 +5,8 @@ public class task3 {
     static boolean lessThanZero(int a) {
         if (a < 0) {
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public static void main(String[] args) {
