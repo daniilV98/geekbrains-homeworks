@@ -7,9 +7,8 @@ public class task1 {
 
         if (10 <= c && c <= 20) {
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public static void main(String[] args) {
