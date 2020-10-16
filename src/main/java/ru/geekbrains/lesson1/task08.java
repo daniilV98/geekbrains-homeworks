@@ -2,7 +2,7 @@ package ru.geekbrains.lesson1;
 
 import java.util.Arrays;
 
-public class task8 {
+public class task08 {
 
     public static void main(String[] args) {
         int[][] square = new int[5][5];

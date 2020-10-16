@@ -2,7 +2,7 @@ package ru.geekbrains.lesson1;
 
 import java.util.Arrays;
 
-public class task9 {
+public class task09 {
 
     public static void main(String[] args) {
         int[] Arr = {17,54,3,2,11,4,5,21,4,8,-9,1};

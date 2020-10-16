@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1;
 
-public class task3 {
+public class task03 {
 
     static boolean lessThanZero(int a) {
         if (a < 0) {

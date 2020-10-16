@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1;
 
-public class task1 {
+public class task01 {
 
     static boolean lessThan(int a, int b) {
         int c = a + b;
