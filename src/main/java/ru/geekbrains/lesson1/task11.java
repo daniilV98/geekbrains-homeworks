@@ -8,6 +8,7 @@ public class task11 {
     }
 
     public static int findMedian(int[] arr) {
+
         int rightSum = 0;
         for (int val : arr) {
             rightSum += val;
