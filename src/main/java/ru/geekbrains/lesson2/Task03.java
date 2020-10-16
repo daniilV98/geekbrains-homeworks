@@ -3,6 +3,7 @@ package ru.geekbrains.lesson2;
 public class Task03 {
 
     public static void main(String[] args) {
+
         convertSeconds(86399);
     }
     public static void convertSeconds(long sec) {
