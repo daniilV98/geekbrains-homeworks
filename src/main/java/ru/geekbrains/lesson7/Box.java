@@ -22,7 +22,7 @@ public class Box<T extends Fruit> {
         return weight;
     }
 
-    public boolean compare(Box box) {
+    public boolean compare(Box<?> box) {
         return this.getWeight() == box.getWeight();
     }
 
@@ -30,7 +30,7 @@ public class Box<T extends Fruit> {
         boxWithFruit.add(fruit);
     }
 
-    public Box<? super T> moveFruitFromBoxToBox(Box<? super T> box) {
+    public Box<T> moveFruitFromBoxToBox(Box<T> box) {
         box.boxWithFruit.addAll(this.boxWithFruit);
         boxWithFruit.clear();
         return box;
