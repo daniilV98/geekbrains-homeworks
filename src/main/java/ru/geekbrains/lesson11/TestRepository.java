@@ -10,7 +10,7 @@ public class TestRepository {
     public static void main(String[] args) throws SQLException {
         Connection connection = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/vtb_jdbc_lesson?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC",
-                "root", "Samsung1125");
+                "root", "");
 
         Repository<User> userRepository = new Repository<>(User.class, connection);
 
@@ -29,7 +29,7 @@ public class TestRepository {
 
         /** Изменение значений по ID
          * */
-        userRepository.update("eee", "nnn", 55L);
+        /*userRepository.update("eee", "nnn", 55L);*/
 
         /** Полный список
          * */
